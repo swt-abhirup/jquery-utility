@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery ToggleSlider</title>
+<script src="jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #bfddff;
+  border: solid 1px #7193bb;
+  border-radius: 0 0 0 0;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Welcome to Softweb Technologies Pvt. Ltd.</div>
+
+</body>
+</html>

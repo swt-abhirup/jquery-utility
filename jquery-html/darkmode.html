@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode CSS</title>
+    <style>
+        .darkmode{
+            background: #353535;
+            color: rgb(216, 216, 216);
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("body").toggleClass("darkmode");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Softweb Technologies Pvt. Ltd.</h1>
+    <button>Darkmode</button>
+</body>
+</html>
